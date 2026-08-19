@@ -1,12 +1,12 @@
-![example](https://github.com/user-attachments/assets/bea82d91-abe5-40a7-b1fa-2d23b9cdda93)
-
 ## Project Description
-
+Master’s degree project
 The project is dedicated to developing a service for enhancing the resolution and detail of anime videos using modern computer vision technologies. The main goal of the project is to transform low-quality video materials (Low Resolution, LR) into high-quality ones (High Resolution, HR) while preserving authentic details and the stylistic elements of anime. The project consists of three main modules, each performing specific tasks:
 
 1. **Dataset Preparation Module** — a module for dataset preparation, including frame extraction from videos, filtering out low-quality images, and removing duplicates.
 2. **Video Upscaling Inference Module** — a module for video processing using the **RRDBNet** model and TensorRT optimization for improved GPU performance.
 3. **Main Module** — used for train and image inference.
+
+![example](https://github.com/user-attachments/assets/bea82d91-abe5-40a7-b1fa-2d23b9cdda93)
 
 ## Main Workflow
 
