@@ -588,7 +588,7 @@ class BaseTrainer:
         """
         resume_path = str(resume_path)
         self.logger.info(f"Loading checkpoint: {resume_path} ...")
-        checkpoint = torch.load(resume_path, map_location=self.device)
+        checkpoint = torch.load(resume_path, map_location=self.device, weights_only=False)
 
         self.start_epoch = checkpoint["epoch"] + 1
         self.mnt_best = checkpoint["monitor_best"]
@@ -707,7 +707,7 @@ class BaseTrainer:
         else:
             print(f"Loading {model_name} weights from: {pretrained_path} ...")
 
-        checkpoint = torch.load(pretrained_path, map_location=self.device)
+        checkpoint = torch.load(pretrained_path, map_location=self.device, weights_only=False)
 
         # Print checkpoint keys for debugging
         print(f"Checkpoint keys: {list(checkpoint.keys())}")
